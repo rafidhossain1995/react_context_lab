@@ -4,7 +4,7 @@ import Clock from "./component/Clock"
 import Weather from "./component/Weather"
 import Home from "./component/Home"
 import {Route, Switch} from "react-router-dom"
-import weatherProvider from "./provider/weatherProvider"
+import WeatherProvider from "./provider/WeatherProvider"
 
 import './App.css';
 
@@ -20,9 +20,10 @@ function App() {
 </Route>
 
 <Route exact path = {"/weather"}>
-<weatherProvider>
-<Weather/>
-</weatherProvider>
+<WeatherProvider>
+  <Weather/>
+</WeatherProvider>
+
  
 </Route>
 
